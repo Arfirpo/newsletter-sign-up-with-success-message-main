@@ -6,57 +6,51 @@
   <link rel="stylesheet" href="./src/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-  <link rel="favicon" href="https://fontawesome.com/icons">
 </head>
 <body>
-  <header class="illustration-sign-up">
-    <div class="img"></div>
-  </header>
-  <main>
-    <section class="s-1">
-      <h1 class="title">Stay updated!</h1>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul>
-        <li><i class="fa-solid fa-circle-check"></i>Product discovery and building what matters</p>
-        </li>
-        <l1>
-          <i></i>
-          <p>Measuring to ensure updates are a success</p>
-        </l1>
-        <li>
-          <i></i>
-          <p>And much more!</p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <form action="">
-        <label for="">
-          <input type="email" placeholder="email@company.com">Email address</input>
-        </label>
-        <label for="">
-          <input type="submit">Subscribe to monthly newsletter</input>
-        </label>
-      </form>
-    </section>
-  </main>
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  <section class="succes-message">
-    Thanks for subscribing!
-    A confirmation email has been sent to ash@loremcompany.com.
-    Please open it and click the button inside to confirm your subscription.
-    Dismiss message
-  </section>
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <header class="cover">
+      <div class="cover__img"></div>
+    </header>
+    <main class="description">
+      <section class="description_text">
+        <h1 class="description_text__title">Stay updated!</h1>
+        <p class="description_text__paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="description__text__check-list">
+          <li class="description__text__check-list__list">
+            <img id="icon" src="./src/images/icon-list.svg">
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li class="description__text__check-list__list">
+            <img id="icon" src="./src/images/icon-list.svg">
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li class="description__text__check-list__list">
+            <img id="icon" src="./src/images/icon-list.svg" alt="">
+            <p>And much more!</p>
+          </li>
+        </ul>
+      </section class="description__suscription">
+      <section>
+        <form class="description__suscription__form" action="">
+          <label for="email">Email address<input id="email" placeholder="email@company.com" required></label>
+          <label for="submit"><input id="submit" type="submit" value="Subscribe to monthly newsletter"></label>
+        </form>
+      </section>
+      <!-- Sign-up form end -->
+      <!-- Success message start -->
+      <section class="succes-message">
+        Thanks for subscribing!
+      A confirmation email has been sent to ash@loremcompany.com.
+      Please open it and click the button inside to confirm your subscription.
+      Dismiss message
+      </section>
+      <!-- Success message end -->
+    </main>    
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Arfirpo" target="_blank">Agustín R. Firpo</a>.
+    </footer>
   </div>
 </body>
 </html>

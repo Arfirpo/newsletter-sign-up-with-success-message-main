@@ -1,5 +1,5 @@
-@import url(./fonts/Roboto-Bold.ttf);
-@import url(./fonts/Roboto-Regular.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
 :root{
     /* Primary */
     --Tomato: hsl(4, 100%, 67%);
@@ -15,50 +15,96 @@
     box-sizing: border-box;
 }
 body{
+    
+    width: 100%;
+    min-height: 100vh;
     font-family: "Roboto", sans-serif;
+    color: var(--DarkSlateGrey);
+    background-color: var(--CharcoalGrey);
+    font-size: 16px;
+    overflow: hidden;
 }
-.illustration-sign-up{
+.container{
+    font-family: "Roboto", sans-serif;
     width: 375px;
-    height: 50vh;
+    height: 842px;
+    margin: 0 auto;
+    background-color: var(--White);    
 }
-.img{
+.cover{
+    width: 100%;
+    height: 33.74%;
+}
+.cover__img{
+    width: 100%;
+    height: 100%;
     background-image:url(./images/illustration-sign-up-mobile.svg);
     background-size:cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
     border-radius: 0% 0% 5% 5%;
 }
-main{
+.description{
     width: 100%;
     padding: 10% 8%;
+    line-height: 24px;
 }
-h1{
-    font-size: 2.1875rem;
-    font-weight: bold;
-    color: var(--DarkSlateGrey);
-    padding-bottom: 5%;
+.description_text__title{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 5% 0 10% 0;
 }
-p:first-of-type{
-    font-weight: 400;
-    font-size: 15px;
-    padding-bottom: 5%;
+.description_text__paragraph{
+    font-size: 16px;
+    padding-bottom: 8.5%;
 }
-ul{
-    list-style-type: none;
-    display: flex;
+.description__text__check-list{
     flex-direction: column;
+    list-style-type: none;
+    margin-bottom: 9%;
+}
+.description__text__check-list__list{
+    display: flex;
     gap: 10px;
+    justify-content: start;
+    align-items:flex-start;
+    padding-bottom: 2.5%;
+    font-size: 15px;
 }
-ul li{
-    line-height: 30px;
+.description__suscription__form{
+    width: 100%;
 }
-
-
+label:first-of-type{
+    font-size: 12px;
+    font-weight: bolder;
+}
+input{
+    width: 100%;
+    width: 326px;
+    height: 59px;
+    border-radius: 8px;
+}
+input:first-of-type{
+    border: 1px solid var(--Grey);
+    padding-left: 8%;
+    margin-top: 2px;
+    margin-bottom: 5.5%;
+}
+input:first-of-type::placeholder{
+    color: var(--Grey);
+    
+}
+input[type="submit"]{
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    font-size: .875rem;
+    font-weight: bold;
+    padding: 0 10%;
+}
 /* Footer */
 
 .attribution { 
     font-size: 11px;
+    margin-top: -40px;
     text-align: center;
 }
 .attribution a { 
