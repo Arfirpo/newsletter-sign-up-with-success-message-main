@@ -1,117 +1,233 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
 
 :root{
-    /* Primary */
     --Tomato: hsl(4, 100%, 67%);
-    /* Neutral */
     --DarkSlateGrey: hsl(234, 29%, 20%);
     --CharcoalGrey: hsl(235, 18%, 26%);
     --Grey: hsl(231, 7%, 60%);
     --White: hsl(0, 0%, 100%);
+    --Box-shadow: #FD6937;
 }
 *,::before,::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
+body{    
     width: 100%;
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
     color: var(--DarkSlateGrey);
     background-color: var(--CharcoalGrey);
     font-size: 16px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.container{
-    font-family: "Roboto", sans-serif;
+.none{
+    display: none;
+}
+.card{
     width: 375px;
     height: 842px;
-    margin: 0 auto;
-    background-color: var(--White);    
+    background-color: var(--White);
 }
 .cover{
     width: 100%;
-    height: 33.74%;
-}
-.cover__img{
-    width: 100%;
-    height: 100%;
-    background-image:url(./images/illustration-sign-up-mobile.svg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius: 0% 0% 5% 5%;
+    height: 17.75rem;
+    background-image:url(../src/images/illustration-sign-up-mobile.svg);
 }
 .description{
-    width: 100%;
-    padding: 10% 8%;
-    line-height: 24px;
+    padding: 0 24px 0 25px;
 }
-.description_text__title{
-    font-size: 2.5rem;
-    font-weight: bolder;
-    padding: 5% 0 10% 0;
+.description__title{
+    font-weight: 700;
+    margin-top: 2.375rem;
+    letter-spacing: .0475rem;
+    font-size: 2.375rem;
 }
-.description_text__paragraph{
-    font-size: 16px;
-    padding-bottom: 8.5%;
+.description__paragraph{
+    margin-top: 1.3125rem;
+    line-height: 155.023%;
+    font-size: 1rem;
 }
-.description__text__check-list{
-    flex-direction: column;
+ul{
     list-style-type: none;
-    margin-bottom: 9%;
+    margin-top: 1.4375rem;
 }
-.description__text__check-list__list{
+.li-flex{
     display: flex;
-    gap: 10px;
-    justify-content: start;
-    align-items:flex-start;
-    padding-bottom: 2.5%;
-    font-size: 15px;
+    flex-direction: row;
 }
-.description__suscription__form{
+.li-flex img{
+    margin-top: -0.625rem;
+}
+.li-flex p {
+    margin-left: 16px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 147.687%;
+}
+.flex{
+    margin-top: 32px;
     width: 100%;
-}
-label:first-of-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 12px;
-    font-weight: bolder;
+    font-weight: 700;
 }
-input{
-    width: 100%;
-    width: 326px;
-    height: 59px;
+.error-txt {
+    color: var(--tomato);
+}
+.flex1{
+    display: flex;
+    flex-direction: column;
+}
+.form__email{
+    margin-top: 10px;
+    width: 327px;
+    height: 56px;
+    padding-left: 22px;
     border-radius: 8px;
+    border: var(--Grey) solid 1px;
 }
-input:first-of-type{
-    border: 1px solid var(--Grey);
-    padding-left: 8%;
-    margin-top: 2px;
-    margin-bottom: 5.5%;
+.email-error {
+    margin-top: 10px;
+    width: 327px;
+    height: 56px;
+    padding-left: 22px;
+    border-radius: 8px;
+    border: var(--tomato) solid 1px;
+    color: var(--tomato);
+    background-color: #FFE8E6;
 }
-input:first-of-type::placeholder{
-    color: var(--Grey);
-    
+.email-error::placeholder {
+    color: var(--tomato);
 }
-input[type="submit"]{
+.form__button{
+    margin-top: 24px;
+    width: 327px;
+    height: 56px;
     background-color: var(--DarkSlateGrey);
     color: var(--White);
-    font-size: .875rem;
-    font-weight: bold;
-    padding: 0 10%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 8px;
 }
-/* Footer */
+.form__button:hover{
+    background: linear-gradient(
+        45deg,
+        #FF527A,
+        #FD6937
+    );
+    border: none;
+    box-shadow: 8px 19px 37px -9px var(--Box-shadow);
+}
+.success {
+    width: 375px;
+    height: 812px;
+    background-color: var(--white);
+    padding: 149px 24px 40px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.success img {
+    width: 64px;
+    height: 64px;
+}
 
-.attribution { 
-    font-size: 11px;
-    margin-top: -40px;
+.success h2 {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103.188%;
+}
+
+.success p {
+    line-height: 150.188%;
+    font-size: 1rem;
+    margin-top: 22px;
+}
+
+#email-txt {
+    font-weight: 700;
+}
+
+.success-btn button {
     text-align: center;
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%);
+    background-color: var(--dark-slate-grey);
+    width: 327px;
+    height: 56px;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 8px;
 }
 
-/* Succes message start */
-.succes-message{
-    display: none;
+.success-btn button:hover {
+    background-image: linear-gradient(45deg, #FF527A, #FD6937);
+    border: none;
+}
+
+@media (min-width:1250px) {
+    .card{
+        width: 928px;
+        height: 641px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 24px 24px 24px 63px;
+        border-radius: 36px;
+    }
+    .cover{
+        width: 400px;
+        height: 593px;
+        background-image: url(./images/illustration-sign-up-desktop.svg);
+        border-radius: 1.25rem;
+    }
+    .description{
+        padding: 0;
+        width: 376px;
+    }
+    .description__title{
+        margin-top: 70px;
+        letter-spacing: 0;
+        font-size: 3.4375rem;
+    }
+    .description__paragraph{
+        margin-top: 15px;
+    }
+    ul{
+        margin-top: 21px;
+    }
+    .flex{
+        margin-top: 36px;
+    }
+    .form__email,
+    .form__button{
+        width: 100%;
+    }
+    .success {
+        width: 504px;
+        height: 520px;
+        background-color: var(--white);
+        padding: 48px 39px 40px 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 36px;
+    }
+    .success h2 {
+        font-size: 3.4375rem;
+    }
+
+    .success-btn button {
+        width: 100%;
+    }
 }
