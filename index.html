@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png" >
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <!-- Sign-up form start -->
+  <main>
+    <div class="card">
+      <div class="cover"></div>
+      <div class="description">
+        <h1 class="description__title">Stay updated!</h1>
+        <p class="description__paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li class="li-flex">
+            <img src="./src/images/icon-list.svg" alt="icon">
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li class="li-flex">
+            <img src="./src/images/icon-list.svg" alt="icon">
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li class="li-flex">
+            <img src="./src/images/icon-list.svg" alt="icon">
+            <p>And much more!</p>
+          </li>
+        </ul>
+        <form action="">
+            <div class="flex">
+              <p>Email Address</p>
+              <p id="error">Valid email required</p>
+            </div>
+            <div class="flex1">
+              <input id="email" class="form__email" type="email" placeholder="email@company.com">
+              <button type="submit" class="form__button">Subscribe to monthly newsletter</button>
+            </div>
+        </form>
+      </div>
+    </div>
+    <div id="success" class="success">
+      <div class="success-txt">
+        <img src="./src/images/icon-success.svg" alt="icon success">
+        <h2>Thanks for subscribing!</h2>
+        <p> A confirmation email has been sent to <span id="email-txt">ash@loremcompany.com</span>.
+          Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <div class="success-btn">
+        <button id="dismiss">Dismiss message</button>
+      </div>
+      <script src="./src/main.js"></script>
+    </div>
+  </main>
+</body>
+</html>
