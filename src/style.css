@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Box-shadow: #FD6937;
+}
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{    
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    color: var(--DarkSlateGrey);
+    background-color: var(--CharcoalGrey);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 23.4375rem;
+    height: 52.625rem;
+    background-color: var(--White);
+}
+.cover{
+    width: 100%;
+    height: 17.75rem;
+    background-image:url(../src/images/illustration-sign-up-mobile.svg);
+}
+.description{
+    padding: 0 1.5rem 0 1.5625rem;
+}
+.description__title{
+    font-weight: 700;
+    margin-top: 2.375rem;
+    letter-spacing: .0475rem;
+    font-size: 2.375rem;
+}
+.description__paragraph{
+    margin-top: 1.3125rem;
+    line-height: 155.023%;
+    font-size: 1rem;
+}
+ul{
+    list-style-type: none;
+    margin-top: 1.4375rem;
+}
+.li-flex{
+    display: flex;
+    flex-direction: row;
+}
+.li-flex img{
+    margin-top: -0.625rem;
+}
+.li-flex p {
+    margin-left: 1rem;
+    margin-bottom: .625rem;
+    font-size: 1rem;
+    line-height: 147.687%;
+}
+.flex{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .75rem;
+    font-weight: 700;
+}
+.flex1{
+    display: flex;
+    flex-direction: column;
+}
+.flex p {
+    width: 6.5625rem;
+}
+.form__email{
+    margin-top: .625rem;
+    width: 20.4375rem;
+    height: 3.5rem;
+    padding-left: 1.375rem;
+    border-radius: .5rem;
+    border: var(--Grey) solid .0625rem;
+}
+#error {
+    display: none;
+    width: 20.4375rem;
+    padding-left: 1.375rem;
+    color: var(--Tomato);
+    text-align: end;
+}
+.form__button {
+    margin-top: 1.5rem;
+    width: 20.4375rem;
+    height: 3.5rem;
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+.form__button:hover, #success button:hover{
+    background: linear-gradient(
+        45deg,
+        #FF527A,
+        #FD6937
+    );
+    border: none;
+    box-shadow: .5rem 1.1875rem 2.3125rem -.5625rem var(--Box-shadow);
+    cursor: pointer;
+}
+#success {
+    width: 23.4375rem;
+    height: 50.75rem;
+    background-color: var(--White);
+    padding: 9.3125rem 1.5rem 2.5rem 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#success img {
+    width: 4rem;
+    height: 4rem;
+}
+#success h2 {
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 103.188%;
+}
+#success p {
+    line-height: 150.188%;
+    font-size: 1rem;
+    margin-top: 1.375rem;
+}
+#email-txt {
+    font-weight: 700;
+}
+#success button {
+    text-align: center;
+    background-color: var(--DarkSlateGrey);
+    width: 20.4375rem;
+    height: 3.5rem;
+    color: var(--White);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+@media (min-width:78.125rem) {
+    .card{
+        width: 58rem;
+        height: 40.0625rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 1.5rem 1.5rem 1.5rem 3.9375rem;
+        border-radius: 2.25rem;
+    }
+    .cover{
+        width: 25rem;
+        height: 37.0625rem;
+        background-image: url(./images/illustration-sign-up-desktop.svg);
+        border-radius: 1.25rem;
+    }
+    .description{
+        padding: 0;
+        width: 23.5rem;
+    }
+    .description__title{
+        margin-top: 4.375rem;
+        letter-spacing: 0;
+        font-size: 3.4375rem;
+    }
+    .description__paragraph{
+        margin-top: .9375rem;
+    }
+    ul{
+        margin-top: 1.3125rem;
+    }
+    .flex{
+        margin-top: 2.25rem;
+    }
+    .form__email,
+    .form__button{
+        width: 100%;
+    }
+    #success {
+        width: 31.5rem;
+        height: 32.5rem;
+        padding: 3rem 2.4375rem 2.5rem 4rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 2.25rem;
+    }
+    #success h2 {
+        font-size: 3.4375rem;
+    }
+    #success button {
+        width: 100%;
+    }
+}
