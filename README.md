@@ -71,10 +71,8 @@ In the following challenges I would like to consolidate my javascript management
 
 - [Image Color Picker](https://imagecolorpicker.com/es) - This page helps me to determine exactly the color to use in each element of the pages I design.
 - [Regexr](https://www.example.com/) - This page provided me with a regular expression to validate the emails in my code.
-- [Font Awesome](https://fontawesome.com/)
-- This page provides good free icons for projects.
-- [Cssmatic](https://www.cssmatic.com/es/box-shadow)
-- This section inside the cssmatic page is very useful to design and see in real time a box shadow.
+- [Font Awesome](https://fontawesome.com/) - This page provides good free icons for projects.
+- [Cssmatic](https://www.cssmatic.com/es/box-shadow) - This section inside the cssmatic page is very useful to design and see in real time a box shadow.
 
 ## Author 🙋🏻‍♂️
 
