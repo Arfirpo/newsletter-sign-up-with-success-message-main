@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links 🔗
 
-- Solution Repository: [Add solution URL here](https://your-solution-url.com)
-- Solution Page: [Add live site URL here](https://arfirpo.github.io/newsletter-sign-up-with-success-message-main/)
+- Solution Repository: [Github Repository](https://github.com/Arfirpo/newsletter-sign-up-with-success-message-mainm)
+- Solution Page: [Github Page](https://arfirpo.github.io/newsletter-sign-up-with-success-message-main/)
 
 ## My process ⚙️
 
@@ -57,7 +57,6 @@ Users should be able to:
 - Javascript
 - Regular Expresions (js)
 - [Font Awesome](https://fontawesome.com/icons) - For icons
-
 
 ### What I learned 📚
 
